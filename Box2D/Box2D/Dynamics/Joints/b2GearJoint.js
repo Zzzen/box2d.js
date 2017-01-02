@@ -16,13 +16,11 @@
  * 3. This notice may not be removed or altered from any source distribution.
  */
 
-goog.provide('box2d.b2GearJoint');
-
-goog.require('box2d.b2Settings');
-goog.require('box2d.b2Joint');
-goog.require('box2d.b2Math');
-goog.require('box2d.b2RevoluteJoint');
-goog.require('box2d.b2PrismaticJoint');
+import '../../Common/b2Settings';
+import './b2Joint';
+import '../../Common/b2Math';
+import './b2RevoluteJoint';
+import './b2PrismaticJoint';
 
 /**
  * Gear joint definition. This definition requires two existing

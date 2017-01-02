@@ -16,13 +16,11 @@
  * 3. This notice may not be removed or altered from any source distribution.
  */
 
-goog.provide('box2d.b2ContactManager');
-
-goog.require('box2d.b2Settings');
-goog.require('box2d.b2Math');
-goog.require('box2d.b2Collision');
-goog.require('box2d.b2BroadPhase');
-goog.require('box2d.b2ContactFactory');
+import '../Common/b2Settings';
+import '../Common/b2Math';
+import '../Collision/b2Collision';
+import '../Collision/b2BroadPhase';
+import '../Dynamics/Contacts/b2ContactFactory';
 
 /**
  * Delegate of box2d.b2World.

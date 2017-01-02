@@ -16,11 +16,9 @@
  * 3. This notice may not be removed or altered from any source distribution.
  */
 
-goog.provide('box2d.b2Contact');
-
-goog.require('box2d.b2Settings');
-goog.require('box2d.b2Collision');
-goog.require('box2d.b2TimeOfImpact');
+import '../../Common/b2Settings';
+import '../../Collision/b2Collision';
+import '../../Collision/b2TimeOfImpact';
 
 /**
  * Friction mixing law. The idea is to allow either fixture to

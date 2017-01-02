@@ -16,11 +16,9 @@
  * 3. This notice may not be removed or altered from any source distribution.
  */
 
-goog.provide('box2d.b2MouseJoint');
-
-goog.require('box2d.b2Settings');
-goog.require('box2d.b2Joint');
-goog.require('box2d.b2Math');
+import '../../Common/b2Settings';
+import './b2Joint';
+import '../../Common/b2Math';
 
 /**
  * Mouse joint definition. This requires a world target point,

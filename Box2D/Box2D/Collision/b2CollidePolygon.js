@@ -16,9 +16,7 @@
  * 3. This notice may not be removed or altered from any source distribution.
  */
 
-goog.provide('box2d.b2CollidePolygon');
-
-goog.require('box2d.b2Collision');
+import './b2Collision';
 
 /**
  * Find the max separation between poly1 and poly2 using edge

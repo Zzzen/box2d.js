@@ -16,10 +16,10 @@
  * 3. This notice may not be removed or altered from any source distribution.
  */
 
-goog.provide('box2d.b2Settings');
-
 //goog.require('goog.asserts');
 //goog.require('goog.string.format');
+
+window.box2d = { b2JointFactory: {} };
 
 if (!Object.defineProperty) {
   Object.defineProperty = function(obj, name, options) {

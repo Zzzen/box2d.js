@@ -16,11 +16,9 @@
  * 3. This notice may not be removed or altered from any source distribution.
  */
 
-goog.provide('box2d.b2EdgeAndCircleContact');
-
-goog.require('box2d.b2Settings');
-goog.require('box2d.b2Contact');
-goog.require('box2d.b2CollideEdge');
+import '../../Common/b2Settings';
+import './b2Contact';
+import '../../Collision/b2CollideEdge';
 
 /**
  * @export

@@ -16,19 +16,16 @@
  * 3. This notice may not be removed or altered from any source distribution.
  */
 
-goog.provide('box2d.b2World');
-
-goog.require('box2d.b2Settings');
-goog.require('box2d.b2Draw');
-goog.require('box2d.b2ContactManager');
-goog.require('box2d.b2ContactSolver');
-goog.require('box2d.b2Island');
-goog.require('box2d.b2Body');
-goog.require('box2d.b2Math');
-goog.require('box2d.b2Collision');
-goog.require('box2d.b2TimeStep');
-goog.require('box2d.b2WorldCallbacks');
-goog.require('box2d.b2JointFactory');
+import '../Common/b2Settings';
+import '../Common/b2Draw';
+import './b2ContactManager';
+import './Contacts/b2ContactSolver';
+import './b2Island';
+import './b2Body';
+import '../Common/b2Math';
+import './b2TimeStep';
+import './b2WorldCallbacks';
+import './Joints/b2JointFactory';
 
 /**
  * The world class manages all physics entities, dynamic

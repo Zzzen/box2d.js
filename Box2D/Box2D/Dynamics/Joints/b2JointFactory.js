@@ -16,11 +16,9 @@
  * 3. This notice may not be removed or altered from any source distribution.
  */
 
-goog.provide('box2d.b2JointFactory');
-
-goog.require('box2d.b2Settings');
-goog.require('box2d.b2Math');
-goog.require('box2d.b2Joint');
+import '../../Common/b2Settings';
+import '../../Common/b2Math';
+import './b2Joint';
 
 /**
  * @export

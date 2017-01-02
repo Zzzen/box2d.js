@@ -16,7 +16,6 @@
  * 3. This notice may not be removed or altered from any source distribution.
  */
 
-goog.provide('box2d');
 
 /**
 \mainpage Box2D API Documentation
@@ -28,59 +27,69 @@ For documentation please see http://box2d.org/documentation.html
 For discussion please visit http://box2d.org/forum
 */
 
+window.goog = {
+    inherits(d, b) {
+        for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    }
+}
+
 // These include files constitute the main Box2D API
+require('./Common/b2Settings');
+require('./Common/b2Draw');
+require('./Common/b2Timer');
 
-goog.require('box2d.b2Settings');
-goog.require('box2d.b2Draw');
-goog.require('box2d.b2Timer');
+require('./Collision/Shapes/b2CircleShape');
+require('./Collision/Shapes/b2EdgeShape');
+require('./Collision/Shapes/b2ChainShape');
+require('./Collision/Shapes/b2PolygonShape');
 
-goog.require('box2d.b2CircleShape');
-goog.require('box2d.b2EdgeShape');
-goog.require('box2d.b2ChainShape');
-goog.require('box2d.b2PolygonShape');
+require('./Collision/b2BroadPhase');
+require('./Collision/b2Distance');
 
-goog.require('box2d.b2BroadPhase');
-goog.require('box2d.b2ShapeDistance');
-goog.require('box2d.b2DynamicTree');
-goog.require('box2d.b2TimeOfImpact');
 
-goog.require('box2d.b2Body');
-goog.require('box2d.b2Fixture');
-goog.require('box2d.b2WorldCallbacks');
-goog.require('box2d.b2TimeStep');
-goog.require('box2d.b2World');
+require('./Collision/b2DynamicTree');
+require('./Collision/b2TimeOfImpact');
 
-goog.require('box2d.b2Contact');
+require('./Dynamics/b2Body');
+require('./Dynamics/b2Fixture');
+require('./Dynamics/b2WorldCallbacks');
+require('./Dynamics/b2TimeStep');
+require('./Dynamics/b2World');
 
-goog.require('box2d.b2AreaJoint');
-goog.require('box2d.b2DistanceJoint');
-goog.require('box2d.b2FrictionJoint');
-goog.require('box2d.b2GearJoint');
-goog.require('box2d.b2MotorJoint');
-goog.require('box2d.b2MouseJoint');
-goog.require('box2d.b2PrismaticJoint');
-goog.require('box2d.b2PulleyJoint');
-goog.require('box2d.b2RevoluteJoint');
-goog.require('box2d.b2RopeJoint');
-goog.require('box2d.b2WeldJoint');
-goog.require('box2d.b2WheelJoint');
+require('./Dynamics/Contacts/b2Contact');
+
+require('./Dynamics/Joints/b2AreaJoint');
+require('./Dynamics/Joints/b2DistanceJoint');
+require('./Dynamics/Joints/b2FrictionJoint');
+require('./Dynamics/Joints/b2GearJoint');
+require('./Dynamics/Joints/b2MotorJoint');
+require('./Dynamics/Joints/b2MouseJoint');
+require('./Dynamics/Joints/b2PrismaticJoint');
+require('./Dynamics/Joints/b2PulleyJoint');
+require('./Dynamics/Joints/b2RevoluteJoint');
+require('./Dynamics/Joints/b2RopeJoint');
+require('./Dynamics/Joints/b2WeldJoint');
+require('./Dynamics/Joints/b2WheelJoint');
+
 
 //#if B2_ENABLE_ROPE
-goog.require('box2d.b2Rope');
+require('./Rope/b2Rope');
 //#endif
 
-//#if B2_ENABLE_CONTROLLER
-goog.require('box2d.b2BuoyancyController');
-goog.require('box2d.b2ConstantAccelController');
-goog.require('box2d.b2ConstantForceController');
-goog.require('box2d.b2GravityController');
-goog.require('box2d.b2TensorDampingController');
-//#endif
+// //#if B2_ENABLE_CONTROLLER
+// require('../../Contributions/Enhancements/Controllers/b2BuoyancyController');
+// require('../../Contributions/Enhancements/Controllers/b2ConstantAccelController');
+// require('../../Contributions/Enhancements/Controllers/b2ConstantForceController');
+// require('../../Contributions/Enhancements/Controllers/b2GravityController');
+// require('../../Contributions/Enhancements/Controllers/b2TensorDampingController');
+// //#endif
 
-//#if B2_ENABLE_PARTICLE
-goog.require('box2d.b2Particle');
-goog.require('box2d.b2ParticleGroup');
-goog.require('box2d.b2ParticleSystem');
-goog.require('box2d.b2StackQueue');
-goog.require('box2d.b2VoronoiDiagram');
-//#endif
+// //#if B2_ENABLE_PARTICLE
+// require('./Particle/b2Particle');
+// require('./Particle/b2ParticleGroup');
+// require('./Particle/b2ParticleSystem');
+// require('./Particle/b2StackQueue');
+// require('./Particle/b2VoronoiDiagram');
+// //#endif

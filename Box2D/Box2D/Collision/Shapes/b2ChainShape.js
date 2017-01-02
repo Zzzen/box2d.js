@@ -16,10 +16,8 @@
  * 3. This notice may not be removed or altered from any source distribution.
  */
 
-goog.provide('box2d.b2ChainShape');
-
-goog.require('box2d.b2Shape');
-goog.require('box2d.b2EdgeShape');
+import "./b2Shape";
+import './b2EdgeShape';
 
 /**
  * A chain shape is a free form sequence of line segments.

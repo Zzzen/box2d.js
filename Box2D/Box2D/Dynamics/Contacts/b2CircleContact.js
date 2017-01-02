@@ -16,11 +16,9 @@
  * 3. This notice may not be removed or altered from any source distribution.
  */
 
-goog.provide('box2d.b2CircleContact');
-
-goog.require('box2d.b2Settings');
-goog.require('box2d.b2Contact');
-goog.require('box2d.b2CollideCircle');
+import '../../Common/b2Settings';
+import './b2Contact';
+import '../../Collision/b2CollideCircle';
 
 /**
  * @export

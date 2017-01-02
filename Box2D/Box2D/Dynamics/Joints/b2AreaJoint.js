@@ -16,11 +16,9 @@
  * 3. This notice may not be removed or altered from any source distribution.
  */
 
-goog.provide('box2d.b2AreaJoint');
-
-goog.require('box2d.b2Settings');
-goog.require('box2d.b2Joint');
-goog.require('box2d.b2Math');
+import '../../Common/b2Settings';
+import './b2Joint';
+import '../../Common/b2Math';
 
 /**
  * Definition for a {@link box2d.b2AreaJoint}, which connects a

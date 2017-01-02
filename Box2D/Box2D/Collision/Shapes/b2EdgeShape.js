@@ -16,9 +16,7 @@
  * 3. This notice may not be removed or altered from any source distribution.
  */
 
-goog.provide('box2d.b2EdgeShape');
-
-goog.require('box2d.b2Shape');
+import './b2Shape';
 
 /**
  * A line segment (edge) shape. These can be connected in chains

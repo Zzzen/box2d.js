@@ -16,9 +16,7 @@
  * 3. This notice may not be removed or altered from any source distribution.
  */
 
-goog.provide('box2d.b2CollideEdge');
-
-goog.require('box2d.b2Collision');
+import './b2Collision';
 
 /**
  * Compute the collision manifold between an edge and a circle.
@@ -199,9 +197,9 @@ box2d.b2EPAxisType = {
   e_edgeA: 1,
   e_edgeB: 2
 };
-goog.exportProperty(box2d.b2EPAxisType, 'e_unknown', box2d.b2EPAxisType.e_unknown);
-goog.exportProperty(box2d.b2EPAxisType, 'e_edgeA', box2d.b2EPAxisType.e_edgeA);
-goog.exportProperty(box2d.b2EPAxisType, 'e_edgeB', box2d.b2EPAxisType.e_edgeB);
+
+
+
 
 /**
  * This structure is used to keep track of the best separating
@@ -334,9 +332,9 @@ box2d.b2EPColliderVertexType = {
   e_concave: 1,
   e_convex: 2
 };
-goog.exportProperty(box2d.b2EPColliderVertexType, 'e_isolated', box2d.b2EPColliderVertexType.e_isolated);
-goog.exportProperty(box2d.b2EPColliderVertexType, 'e_concave', box2d.b2EPColliderVertexType.e_concave);
-goog.exportProperty(box2d.b2EPColliderVertexType, 'e_convex', box2d.b2EPColliderVertexType.e_convex);
+
+
+
 
 /**
  * This class collides and edge and a polygon, taking into

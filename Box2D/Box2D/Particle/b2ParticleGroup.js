@@ -43,11 +43,11 @@ box2d.b2ParticleGroupFlag = {
   b2_particleGroupNeedsUpdateDepth: 1 << 4
 };
 
-goog.exportProperty(box2d.b2ParticleGroupFlag, 'b2_solidParticleGroup', box2d.b2ParticleGroupFlag.b2_solidParticleGroup);
-goog.exportProperty(box2d.b2ParticleGroupFlag, 'b2_rigidParticleGroup', box2d.b2ParticleGroupFlag.b2_rigidParticleGroup);
-goog.exportProperty(box2d.b2ParticleGroupFlag, 'b2_particleGroupCanBeEmpty', box2d.b2ParticleGroupFlag.b2_particleGroupCanBeEmpty);
-goog.exportProperty(box2d.b2ParticleGroupFlag, 'b2_particleGroupWillBeDestroyed', box2d.b2ParticleGroupFlag.b2_particleGroupWillBeDestroyed);
-goog.exportProperty(box2d.b2ParticleGroupFlag, 'b2_particleGroupNeedsUpdateDepth', box2d.b2ParticleGroupFlag.b2_particleGroupNeedsUpdateDepth);
+
+
+
+
+
 
 /**
  * @const

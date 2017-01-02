@@ -16,10 +16,8 @@
  * 3. This notice may not be removed or altered from any source distribution.
  */
 
-goog.provide('box2d.b2EdgeAndPolygonContact');
-
-goog.require('box2d.b2Settings');
-goog.require('box2d.b2Contact');
+import '../../Common/b2Settings';
+import './b2Contact';
 
 /**
  * @export
